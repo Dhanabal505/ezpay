@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C55EC8392616FE6200F2885E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EC8382616FE6200F2885E /* AppDelegate.swift */; };
+		C55EC83B2616FE6200F2885E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EC83A2616FE6200F2885E /* SceneDelegate.swift */; };
+		C55EC83D2616FE6200F2885E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EC83C2616FE6200F2885E /* ViewController.swift */; };
+		C55EC8402616FE6200F2885E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55EC83E2616FE6200F2885E /* Main.storyboard */; };
+		C55EC8432616FE6200F2885E /* ezpay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C55EC8412616FE6200F2885E /* ezpay.xcdatamodeld */; };
+		C55EC8452616FE6300F2885E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55EC8442616FE6300F2885E /* Assets.xcassets */; };
+		C55EC8482616FE6300F2885E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55EC8462616FE6300F2885E /* LaunchScreen.storyboard */; };
+		C55EC8532616FE6300F2885E /* ezpayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EC8522616FE6300F2885E /* ezpayTests.swift */; };
+		C55EC85E2616FE6300F2885E /* ezpayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EC85D2616FE6300F2885E /* ezpayUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C55EC84F2616FE6300F2885E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C55EC82D2616FE6200F2885E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C55EC8342616FE6200F2885E;
+			remoteInfo = ezpay;
+		};
+		C55EC85A2616FE6300F2885E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C55EC82D2616FE6200F2885E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C55EC8342616FE6200F2885E;
+			remoteInfo = ezpay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C55EC8352616FE6200F2885E /* ezpay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ezpay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C55EC8382616FE6200F2885E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C55EC83A2616FE6200F2885E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C55EC83C2616FE6200F2885E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C55EC83F2616FE6200F2885E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C55EC8422616FE6200F2885E /* ezpay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ezpay.xcdatamodel; sourceTree = "<group>"; };
+		C55EC8442616FE6300F2885E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C55EC8472616FE6300F2885E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C55EC8492616FE6300F2885E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C55EC84E2616FE6300F2885E /* ezpayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ezpayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C55EC8522616FE6300F2885E /* ezpayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ezpayTests.swift; sourceTree = "<group>"; };
+		C55EC8542616FE6300F2885E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C55EC8592616FE6300F2885E /* ezpayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ezpayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C55EC85D2616FE6300F2885E /* ezpayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ezpayUITests.swift; sourceTree = "<group>"; };
+		C55EC85F2616FE6300F2885E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C55EC8322616FE6200F2885E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55EC84B2616FE6300F2885E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55EC8562616FE6300F2885E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C55EC82C2616FE6200F2885E = {
+			isa = PBXGroup;
+			children = (
+				C55EC8372616FE6200F2885E /* ezpay */,
+				C55EC8512616FE6300F2885E /* ezpayTests */,
+				C55EC85C2616FE6300F2885E /* ezpayUITests */,
+				C55EC8362616FE6200F2885E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C55EC8362616FE6200F2885E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C55EC8352616FE6200F2885E /* ezpay.app */,
+				C55EC84E2616FE6300F2885E /* ezpayTests.xctest */,
+				C55EC8592616FE6300F2885E /* ezpayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C55EC8372616FE6200F2885E /* ezpay */ = {
+			isa = PBXGroup;
+			children = (
+				C55EC8382616FE6200F2885E /* AppDelegate.swift */,
+				C55EC83A2616FE6200F2885E /* SceneDelegate.swift */,
+				C55EC83C2616FE6200F2885E /* ViewController.swift */,
+				C55EC83E2616FE6200F2885E /* Main.storyboard */,
+				C55EC8442616FE6300F2885E /* Assets.xcassets */,
+				C55EC8462616FE6300F2885E /* LaunchScreen.storyboard */,
+				C55EC8492616FE6300F2885E /* Info.plist */,
+				C55EC8412616FE6200F2885E /* ezpay.xcdatamodeld */,
+			);
+			path = ezpay;
+			sourceTree = "<group>";
+		};
+		C55EC8512616FE6300F2885E /* ezpayTests */ = {
+			isa = PBXGroup;
+			children = (
+				C55EC8522616FE6300F2885E /* ezpayTests.swift */,
+				C55EC8542616FE6300F2885E /* Info.plist */,
+			);
+			path = ezpayTests;
+			sourceTree = "<group>";
+		};
+		C55EC85C2616FE6300F2885E /* ezpayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C55EC85D2616FE6300F2885E /* ezpayUITests.swift */,
+				C55EC85F2616FE6300F2885E /* Info.plist */,
+			);
+			path = ezpayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C55EC8342616FE6200F2885E /* ezpay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C55EC8622616FE6300F2885E /* Build configuration list for PBXNativeTarget "ezpay" */;
+			buildPhases = (
+				C55EC8312616FE6200F2885E /* Sources */,
+				C55EC8322616FE6200F2885E /* Frameworks */,
+				C55EC8332616FE6200F2885E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ezpay;
+			productName = ezpay;
+			productReference = C55EC8352616FE6200F2885E /* ezpay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C55EC84D2616FE6300F2885E /* ezpayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C55EC8652616FE6300F2885E /* Build configuration list for PBXNativeTarget "ezpayTests" */;
+			buildPhases = (
+				C55EC84A2616FE6300F2885E /* Sources */,
+				C55EC84B2616FE6300F2885E /* Frameworks */,
+				C55EC84C2616FE6300F2885E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C55EC8502616FE6300F2885E /* PBXTargetDependency */,
+			);
+			name = ezpayTests;
+			productName = ezpayTests;
+			productReference = C55EC84E2616FE6300F2885E /* ezpayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C55EC8582616FE6300F2885E /* ezpayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C55EC8682616FE6300F2885E /* Build configuration list for PBXNativeTarget "ezpayUITests" */;
+			buildPhases = (
+				C55EC8552616FE6300F2885E /* Sources */,
+				C55EC8562616FE6300F2885E /* Frameworks */,
+				C55EC8572616FE6300F2885E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C55EC85B2616FE6300F2885E /* PBXTargetDependency */,
+			);
+			name = ezpayUITests;
+			productName = ezpayUITests;
+			productReference = C55EC8592616FE6300F2885E /* ezpayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C55EC82D2616FE6200F2885E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					C55EC8342616FE6200F2885E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					C55EC84D2616FE6300F2885E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = C55EC8342616FE6200F2885E;
+					};
+					C55EC8582616FE6300F2885E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = C55EC8342616FE6200F2885E;
+					};
+				};
+			};
+			buildConfigurationList = C55EC8302616FE6200F2885E /* Build configuration list for PBXProject "ezpay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C55EC82C2616FE6200F2885E;
+			productRefGroup = C55EC8362616FE6200F2885E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C55EC8342616FE6200F2885E /* ezpay */,
+				C55EC84D2616FE6300F2885E /* ezpayTests */,
+				C55EC8582616FE6300F2885E /* ezpayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C55EC8332616FE6200F2885E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55EC8482616FE6300F2885E /* LaunchScreen.storyboard in Resources */,
+				C55EC8452616FE6300F2885E /* Assets.xcassets in Resources */,
+				C55EC8402616FE6200F2885E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55EC84C2616FE6300F2885E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55EC8572616FE6300F2885E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C55EC8312616FE6200F2885E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55EC83D2616FE6200F2885E /* ViewController.swift in Sources */,
+				C55EC8392616FE6200F2885E /* AppDelegate.swift in Sources */,
+				C55EC83B2616FE6200F2885E /* SceneDelegate.swift in Sources */,
+				C55EC8432616FE6200F2885E /* ezpay.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55EC84A2616FE6300F2885E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55EC8532616FE6300F2885E /* ezpayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55EC8552616FE6300F2885E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55EC85E2616FE6300F2885E /* ezpayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C55EC8502616FE6300F2885E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C55EC8342616FE6200F2885E /* ezpay */;
+			targetProxy = C55EC84F2616FE6300F2885E /* PBXContainerItemProxy */;
+		};
+		C55EC85B2616FE6300F2885E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C55EC8342616FE6200F2885E /* ezpay */;
+			targetProxy = C55EC85A2616FE6300F2885E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C55EC83E2616FE6200F2885E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C55EC83F2616FE6200F2885E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C55EC8462616FE6300F2885E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C55EC8472616FE6300F2885E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C55EC8602616FE6300F2885E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C55EC8612616FE6300F2885E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C55EC8632616FE6300F2885E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAQC858L75;
+				INFOPLIST_FILE = ezpay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezpay.app.ezpay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C55EC8642616FE6300F2885E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAQC858L75;
+				INFOPLIST_FILE = ezpay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezpay.app.ezpay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C55EC8662616FE6300F2885E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAQC858L75;
+				INFOPLIST_FILE = ezpayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezpay.app.ezpayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ezpay.app/ezpay";
+			};
+			name = Debug;
+		};
+		C55EC8672616FE6300F2885E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAQC858L75;
+				INFOPLIST_FILE = ezpayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezpay.app.ezpayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ezpay.app/ezpay";
+			};
+			name = Release;
+		};
+		C55EC8692616FE6300F2885E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAQC858L75;
+				INFOPLIST_FILE = ezpayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezpay.app.ezpayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ezpay;
+			};
+			name = Debug;
+		};
+		C55EC86A2616FE6300F2885E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAQC858L75;
+				INFOPLIST_FILE = ezpayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezpay.app.ezpayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ezpay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C55EC8302616FE6200F2885E /* Build configuration list for PBXProject "ezpay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55EC8602616FE6300F2885E /* Debug */,
+				C55EC8612616FE6300F2885E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C55EC8622616FE6300F2885E /* Build configuration list for PBXNativeTarget "ezpay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55EC8632616FE6300F2885E /* Debug */,
+				C55EC8642616FE6300F2885E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C55EC8652616FE6300F2885E /* Build configuration list for PBXNativeTarget "ezpayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55EC8662616FE6300F2885E /* Debug */,
+				C55EC8672616FE6300F2885E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C55EC8682616FE6300F2885E /* Build configuration list for PBXNativeTarget "ezpayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55EC8692616FE6300F2885E /* Debug */,
+				C55EC86A2616FE6300F2885E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C55EC8412616FE6200F2885E /* ezpay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C55EC8422616FE6200F2885E /* ezpay.xcdatamodel */,
+			);
+			currentVersion = C55EC8422616FE6200F2885E /* ezpay.xcdatamodel */;
+			path = ezpay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C55EC82D2616FE6200F2885E /* Project object */;
+}
