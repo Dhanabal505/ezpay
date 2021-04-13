@@ -1,0 +1,6 @@
+framework module Pods_ezpay_ezpayUITests {
+  umbrella header "Pods-ezpay-ezpayUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

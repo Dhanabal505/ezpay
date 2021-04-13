@@ -3,10 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AB2B9B728EBB6749E5B4135 /* Pods_ezpayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD2A987FA00A4CA72DDFC2B /* Pods_ezpayTests.framework */; };
+		68607A8F856CFCD8BF80A5BC /* Pods_ezpay_ezpayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87200FEE894314DBD8D3DE0 /* Pods_ezpay_ezpayUITests.framework */; };
+		A68522E7008589F4BE3BB222 /* Pods_ezpay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDEA4056897BC552338B17B /* Pods_ezpay.framework */; };
+		C55879FA261C97D7009FB19D /* Constaints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55879F9261C97D7009FB19D /* Constaints.swift */; };
+		C5587A02261C9860009FB19D /* Otherextensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587A01261C9860009FB19D /* Otherextensions.swift */; };
+		C5587A20261C9A07009FB19D /* NavigationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587A1F261C9A07009FB19D /* NavigationModels.swift */; };
+		C5587A29261C9AC1009FB19D /* CustomBtns.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587A28261C9AC1009FB19D /* CustomBtns.swift */; };
+		C5587A31261C9B07009FB19D /* Accessblity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587A30261C9B07009FB19D /* Accessblity.swift */; };
+		C5587A36261C9B5A009FB19D /* CustomImgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587A35261C9B5A009FB19D /* CustomImgs.swift */; };
+		C5587AC2261EE257009FB19D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5587AC1261EE257009FB19D /* GoogleService-Info.plist */; };
+		C5587B35261F0D78009FB19D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587B34261F0D78009FB19D /* DataModel.swift */; };
+		C5587B3B261F1C5F009FB19D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587B3A261F1C5F009FB19D /* SignInVC.swift */; };
+		C5587B43261F1D63009FB19D /* DashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587B42261F1D63009FB19D /* DashVC.swift */; };
+		C5587B4B261F23ED009FB19D /* AddMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587B4A261F23ED009FB19D /* AddMoneyVC.swift */; };
+		C5587B50261F2409009FB19D /* CustomTxtFlds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587B4F261F2409009FB19D /* CustomTxtFlds.swift */; };
+		C5587B55261F35AF009FB19D /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587B54261F35AF009FB19D /* LoaderView.swift */; };
+		C5587B7A261F42A3009FB19D /* SendMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587B79261F42A3009FB19D /* SendMoneyVC.swift */; };
+		C5587C4726206212009FB19D /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587C4626206212009FB19D /* UserVC.swift */; };
+		C5587D302624CCA7009FB19D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587D2F2624CCA7009FB19D /* MainVC.swift */; };
+		C5587D452625AFF9009FB19D /* MerchantDashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587D442625AFF9009FB19D /* MerchantDashVC.swift */; };
+		C5587D4A2625B044009FB19D /* SellProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587D492625B044009FB19D /* SellProductVC.swift */; };
 		C55EC8392616FE6200F2885E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EC8382616FE6200F2885E /* AppDelegate.swift */; };
 		C55EC83B2616FE6200F2885E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EC83A2616FE6200F2885E /* SceneDelegate.swift */; };
 		C55EC83D2616FE6200F2885E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EC83C2616FE6200F2885E /* ViewController.swift */; };
@@ -36,6 +57,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DB74CEF476E2198AFE33AB0 /* Pods-ezpayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezpayTests.debug.xcconfig"; path = "Target Support Files/Pods-ezpayTests/Pods-ezpayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FEA08923CB9DB2BCFF02D44 /* Pods-ezpayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezpayTests.release.xcconfig"; path = "Target Support Files/Pods-ezpayTests/Pods-ezpayTests.release.xcconfig"; sourceTree = "<group>"; };
+		2DD2A987FA00A4CA72DDFC2B /* Pods_ezpayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ezpayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98C0553D24717CC2BFC841AB /* Pods-ezpay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezpay.release.xcconfig"; path = "Target Support Files/Pods-ezpay/Pods-ezpay.release.xcconfig"; sourceTree = "<group>"; };
+		A60BE05C06EDA05573D091A4 /* Pods-ezpay-ezpayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezpay-ezpayUITests.debug.xcconfig"; path = "Target Support Files/Pods-ezpay-ezpayUITests/Pods-ezpay-ezpayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BFDEA4056897BC552338B17B /* Pods_ezpay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ezpay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23250FCB5B13F7E5DA67246 /* Pods-ezpay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezpay.debug.xcconfig"; path = "Target Support Files/Pods-ezpay/Pods-ezpay.debug.xcconfig"; sourceTree = "<group>"; };
+		C55879F9261C97D7009FB19D /* Constaints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constaints.swift; sourceTree = "<group>"; };
+		C5587A01261C9860009FB19D /* Otherextensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Otherextensions.swift; sourceTree = "<group>"; };
+		C5587A1F261C9A07009FB19D /* NavigationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModels.swift; sourceTree = "<group>"; };
+		C5587A28261C9AC1009FB19D /* CustomBtns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBtns.swift; sourceTree = "<group>"; };
+		C5587A30261C9B07009FB19D /* Accessblity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessblity.swift; sourceTree = "<group>"; };
+		C5587A35261C9B5A009FB19D /* CustomImgs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImgs.swift; sourceTree = "<group>"; };
+		C5587A3D261CA3D6009FB19D /* ezpay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ezpay.entitlements; sourceTree = "<group>"; };
+		C5587AC1261EE257009FB19D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C5587B34261F0D78009FB19D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		C5587B3A261F1C5F009FB19D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		C5587B42261F1D63009FB19D /* DashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashVC.swift; sourceTree = "<group>"; };
+		C5587B4A261F23ED009FB19D /* AddMoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyVC.swift; sourceTree = "<group>"; };
+		C5587B4F261F2409009FB19D /* CustomTxtFlds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTxtFlds.swift; sourceTree = "<group>"; };
+		C5587B54261F35AF009FB19D /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		C5587B79261F42A3009FB19D /* SendMoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyVC.swift; sourceTree = "<group>"; };
+		C5587C4626206212009FB19D /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
+		C5587D2F2624CCA7009FB19D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		C5587D442625AFF9009FB19D /* MerchantDashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantDashVC.swift; sourceTree = "<group>"; };
+		C5587D492625B044009FB19D /* SellProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellProductVC.swift; sourceTree = "<group>"; };
 		C55EC8352616FE6200F2885E /* ezpay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ezpay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55EC8382616FE6200F2885E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C55EC83A2616FE6200F2885E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +98,8 @@
 		C55EC8592616FE6300F2885E /* ezpayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ezpayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55EC85D2616FE6300F2885E /* ezpayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ezpayUITests.swift; sourceTree = "<group>"; };
 		C55EC85F2616FE6300F2885E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D87200FEE894314DBD8D3DE0 /* Pods_ezpay_ezpayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ezpay_ezpayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C56E58B76463A7E34E15E4 /* Pods-ezpay-ezpayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezpay-ezpayUITests.release.xcconfig"; path = "Target Support Files/Pods-ezpay-ezpayUITests/Pods-ezpay-ezpayUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68522E7008589F4BE3BB222 /* Pods_ezpay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB2B9B728EBB6749E5B4135 /* Pods_ezpayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +123,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68607A8F856CFCD8BF80A5BC /* Pods_ezpay_ezpayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C55879F7261C97A5009FB19D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C5587A27261C9A8E009FB19D /* Components */,
+				C5587A1E261C99EC009FB19D /* Models */,
+				C55879F8261C97AF009FB19D /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C55879F8261C97AF009FB19D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C55879F9261C97D7009FB19D /* Constaints.swift */,
+				C5587A01261C9860009FB19D /* Otherextensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C5587A1E261C99EC009FB19D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5587A1F261C9A07009FB19D /* NavigationModels.swift */,
+				C5587B34261F0D78009FB19D /* DataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C5587A27261C9A8E009FB19D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C5587A28261C9AC1009FB19D /* CustomBtns.swift */,
+				C5587A30261C9B07009FB19D /* Accessblity.swift */,
+				C5587A35261C9B5A009FB19D /* CustomImgs.swift */,
+				C5587B4F261F2409009FB19D /* CustomTxtFlds.swift */,
+				C5587B54261F35AF009FB19D /* LoaderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C5587B39261F1C34009FB19D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5587D2F2624CCA7009FB19D /* MainVC.swift */,
+				C5587B3A261F1C5F009FB19D /* SignInVC.swift */,
+				C5587B42261F1D63009FB19D /* DashVC.swift */,
+				C5587D442625AFF9009FB19D /* MerchantDashVC.swift */,
+				C5587B4A261F23ED009FB19D /* AddMoneyVC.swift */,
+				C5587B79261F42A3009FB19D /* SendMoneyVC.swift */,
+				C5587C4626206212009FB19D /* UserVC.swift */,
+				C5587D492625B044009FB19D /* SellProductVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		C55EC82C2616FE6200F2885E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +192,8 @@
 				C55EC8512616FE6300F2885E /* ezpayTests */,
 				C55EC85C2616FE6300F2885E /* ezpayUITests */,
 				C55EC8362616FE6200F2885E /* Products */,
+				FBAF5C37E658168D18D6B66D /* Pods */,
+				C70CD098F9C34667472A4561 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +210,15 @@
 		C55EC8372616FE6200F2885E /* ezpay */ = {
 			isa = PBXGroup;
 			children = (
+				C5587A3D261CA3D6009FB19D /* ezpay.entitlements */,
+				C55879F7261C97A5009FB19D /* Utils */,
+				C5587B39261F1C34009FB19D /* Controllers */,
 				C55EC8382616FE6200F2885E /* AppDelegate.swift */,
 				C55EC83A2616FE6200F2885E /* SceneDelegate.swift */,
 				C55EC83C2616FE6200F2885E /* ViewController.swift */,
 				C55EC83E2616FE6200F2885E /* Main.storyboard */,
 				C55EC8442616FE6300F2885E /* Assets.xcassets */,
+				C5587AC1261EE257009FB19D /* GoogleService-Info.plist */,
 				C55EC8462616FE6300F2885E /* LaunchScreen.storyboard */,
 				C55EC8492616FE6300F2885E /* Info.plist */,
 				C55EC8412616FE6200F2885E /* ezpay.xcdatamodeld */,
@@ -131,6 +244,29 @@
 			path = ezpayUITests;
 			sourceTree = "<group>";
 		};
+		C70CD098F9C34667472A4561 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFDEA4056897BC552338B17B /* Pods_ezpay.framework */,
+				D87200FEE894314DBD8D3DE0 /* Pods_ezpay_ezpayUITests.framework */,
+				2DD2A987FA00A4CA72DDFC2B /* Pods_ezpayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBAF5C37E658168D18D6B66D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C23250FCB5B13F7E5DA67246 /* Pods-ezpay.debug.xcconfig */,
+				98C0553D24717CC2BFC841AB /* Pods-ezpay.release.xcconfig */,
+				A60BE05C06EDA05573D091A4 /* Pods-ezpay-ezpayUITests.debug.xcconfig */,
+				E1C56E58B76463A7E34E15E4 /* Pods-ezpay-ezpayUITests.release.xcconfig */,
+				0DB74CEF476E2198AFE33AB0 /* Pods-ezpayTests.debug.xcconfig */,
+				1FEA08923CB9DB2BCFF02D44 /* Pods-ezpayTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C55EC8622616FE6300F2885E /* Build configuration list for PBXNativeTarget "ezpay" */;
 			buildPhases = (
+				2E30FB63FCCCDB6AC013BA93 /* [CP] Check Pods Manifest.lock */,
 				C55EC8312616FE6200F2885E /* Sources */,
 				C55EC8322616FE6200F2885E /* Frameworks */,
 				C55EC8332616FE6200F2885E /* Resources */,
+				6D1A71EF05DA713BD077BB3C /* [CP] Embed Pods Frameworks */,
+				856D38BC0423C933FC830652 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,6 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C55EC8652616FE6300F2885E /* Build configuration list for PBXNativeTarget "ezpayTests" */;
 			buildPhases = (
+				7502D1CE5017328F98763A19 /* [CP] Check Pods Manifest.lock */,
 				C55EC84A2616FE6300F2885E /* Sources */,
 				C55EC84B2616FE6300F2885E /* Frameworks */,
 				C55EC84C2616FE6300F2885E /* Resources */,
@@ -173,9 +313,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C55EC8682616FE6300F2885E /* Build configuration list for PBXNativeTarget "ezpayUITests" */;
 			buildPhases = (
+				F30E371B40197A8B61B6B62D /* [CP] Check Pods Manifest.lock */,
 				C55EC8552616FE6300F2885E /* Sources */,
 				C55EC8562616FE6300F2885E /* Frameworks */,
 				C55EC8572616FE6300F2885E /* Resources */,
+				A2082FE7223966D35733C461 /* [CP] Embed Pods Frameworks */,
+				A3F8F952D817B2BBF821415F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +379,7 @@
 			files = (
 				C55EC8482616FE6300F2885E /* LaunchScreen.storyboard in Resources */,
 				C55EC8452616FE6300F2885E /* Assets.xcassets in Resources */,
+				C5587AC2261EE257009FB19D /* GoogleService-Info.plist in Resources */,
 				C55EC8402616FE6200F2885E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +400,143 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E30FB63FCCCDB6AC013BA93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ezpay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D1A71EF05DA713BD077BB3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ezpay/Pods-ezpay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ezpay/Pods-ezpay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ezpay/Pods-ezpay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7502D1CE5017328F98763A19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ezpayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		856D38BC0423C933FC830652 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ezpay/Pods-ezpay-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ezpay/Pods-ezpay-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ezpay/Pods-ezpay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2082FE7223966D35733C461 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ezpay-ezpayUITests/Pods-ezpay-ezpayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ezpay-ezpayUITests/Pods-ezpay-ezpayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ezpay-ezpayUITests/Pods-ezpay-ezpayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3F8F952D817B2BBF821415F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ezpay-ezpayUITests/Pods-ezpay-ezpayUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ezpay-ezpayUITests/Pods-ezpay-ezpayUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ezpay-ezpayUITests/Pods-ezpay-ezpayUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F30E371B40197A8B61B6B62D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ezpay-ezpayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C55EC8312616FE6200F2885E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -263,8 +544,25 @@
 			files = (
 				C55EC83D2616FE6200F2885E /* ViewController.swift in Sources */,
 				C55EC8392616FE6200F2885E /* AppDelegate.swift in Sources */,
+				C5587D452625AFF9009FB19D /* MerchantDashVC.swift in Sources */,
+				C5587B3B261F1C5F009FB19D /* SignInVC.swift in Sources */,
+				C5587B35261F0D78009FB19D /* DataModel.swift in Sources */,
 				C55EC83B2616FE6200F2885E /* SceneDelegate.swift in Sources */,
+				C5587B4B261F23ED009FB19D /* AddMoneyVC.swift in Sources */,
+				C5587A20261C9A07009FB19D /* NavigationModels.swift in Sources */,
+				C5587C4726206212009FB19D /* UserVC.swift in Sources */,
+				C5587A36261C9B5A009FB19D /* CustomImgs.swift in Sources */,
 				C55EC8432616FE6200F2885E /* ezpay.xcdatamodeld in Sources */,
+				C5587B50261F2409009FB19D /* CustomTxtFlds.swift in Sources */,
+				C5587B7A261F42A3009FB19D /* SendMoneyVC.swift in Sources */,
+				C5587D302624CCA7009FB19D /* MainVC.swift in Sources */,
+				C5587A29261C9AC1009FB19D /* CustomBtns.swift in Sources */,
+				C5587A02261C9860009FB19D /* Otherextensions.swift in Sources */,
+				C55879FA261C97D7009FB19D /* Constaints.swift in Sources */,
+				C5587D4A2625B044009FB19D /* SellProductVC.swift in Sources */,
+				C5587B55261F35AF009FB19D /* LoaderView.swift in Sources */,
+				C5587A31261C9B07009FB19D /* Accessblity.swift in Sources */,
+				C5587B43261F1D63009FB19D /* DashVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,44 +735,53 @@
 		};
 		C55EC8632616FE6300F2885E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C23250FCB5B13F7E5DA67246 /* Pods-ezpay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ezpay/ezpay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KAQC858L75;
 				INFOPLIST_FILE = ezpay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ezpay.app.ezpay;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezpay.nissi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C55EC8642616FE6300F2885E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C0553D24717CC2BFC841AB /* Pods-ezpay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ezpay/ezpay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KAQC858L75;
 				INFOPLIST_FILE = ezpay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ezpay.app.ezpay;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezpay.nissi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		C55EC8662616FE6300F2885E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DB74CEF476E2198AFE33AB0 /* Pods-ezpayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +804,7 @@
 		};
 		C55EC8672616FE6300F2885E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FEA08923CB9DB2BCFF02D44 /* Pods-ezpayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +827,7 @@
 		};
 		C55EC8692616FE6300F2885E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A60BE05C06EDA05573D091A4 /* Pods-ezpay-ezpayUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +848,7 @@
 		};
 		C55EC86A2616FE6300F2885E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1C56E58B76463A7E34E15E4 /* Pods-ezpay-ezpayUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

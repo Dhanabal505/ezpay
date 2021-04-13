@@ -7,14 +7,36 @@
 
 import UIKit
 import CoreData
+import Firebase
+import GoogleSignIn
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
+        
+        GIDSignIn.sharedInstance()?.clientID = "57005291591-n83ct2o35auqb0rildnbs55icb4m0pkg.apps.googleusercontent.com"
+        
+        if #available(iOS 13.0, *){
+            print("iOS 13")
+            UIApplication.shared.isStatusBarHidden = false
+            UIApplication.shared.statusBarStyle = UIStatusBarStyle.darkContent
+        }
+        else{
+            window = UIWindow(frame: UIScreen.main.bounds)
+            if let window = window {
+                print("window")
+
+                let main = ViewController()
+                
+                let navigationController = UINavigationController(rootViewController: main)
+                window.rootViewController = navigationController
+                window.makeKeyAndVisible()
+            }
+        }
         return true
     }
 
