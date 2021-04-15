@@ -14,7 +14,7 @@ class SignInVC: UIViewController, GIDSignInDelegate{
     
     lazy var Googlesignup:CustomFormBTNs={
         let btn = CustomFormBTNs(title: "Google SignIn", bgColor: .lightGray, textColor: .black)
-        btn.addTarget(self, action: #selector(handlegooglesignup), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(handleApplesignup), for: .touchUpInside)
         return btn
     }()
     
@@ -22,7 +22,6 @@ class SignInVC: UIViewController, GIDSignInDelegate{
         let btn = ASAuthorizationAppleIDButton()
         btn.translatesAutoresizingMaskIntoConstraints=false
         btn.addTarget(self, action: #selector(handleApplesignup), for: .touchUpInside)
-        btn.isHidden=true
         return btn
     }()
     
@@ -35,7 +34,7 @@ class SignInVC: UIViewController, GIDSignInDelegate{
         super.viewDidLoad()
         
         SetSubViews()
-        
+        AppleSignup.addTarget(self, action: #selector(handleApplesignup), for: .touchUpInside)
         GIDSignIn.sharedInstance()?.delegate = self
         GIDSignIn.sharedInstance()?.presentingViewController = self
 
@@ -69,7 +68,7 @@ class SignInVC: UIViewController, GIDSignInDelegate{
     }
     
     @objc func handleApplesignup(){
-        
+        print("Hai")
         let AppleIDProvider = ASAuthorizationAppleIDProvider()
         let request = AppleIDProvider.createRequest()
         request.requestedScopes = [.email, .fullName]
@@ -272,6 +271,7 @@ extension SignInVC{
         Googlesignup.anchorWith_XY_TopLeftBottomRight_Padd(x: view.centerXAnchor, y: view.centerYAnchor, top: nil, left: view.leadingAnchor, bottom: nil, right: view.trailingAnchor, padd: .init(top: 0, left: 50, bottom: 0, right: -50))
         
         AppleSignup.anchorWith_TopLeftBottomRight_Padd(top: Googlesignup.bottomAnchor, left: Googlesignup.leadingAnchor, bottom: nil, right: Googlesignup.trailingAnchor, padd: .init(top: 30, left: 0, bottom: 0, right: 0))
+        AppleSignup.anchorWith_Height(height: nil, const: 50)
         
     }
 }

@@ -11,6 +11,8 @@ target 'ezpay' do
 	pod 'Kingfisher'
 	pod 'Firebase/Database'
 	pod 'GoogleSignIn'
+	pod 'Firebase/Core'
+	pod 'Firebase/Auth'
 
   target 'ezpayTests' do
     inherit! :search_paths

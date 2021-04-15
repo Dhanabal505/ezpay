@@ -28,6 +28,7 @@
 		C5587D302624CCA7009FB19D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587D2F2624CCA7009FB19D /* MainVC.swift */; };
 		C5587D452625AFF9009FB19D /* MerchantDashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587D442625AFF9009FB19D /* MerchantDashVC.swift */; };
 		C5587D4A2625B044009FB19D /* SellProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587D492625B044009FB19D /* SellProductVC.swift */; };
+		C5587DF3262803D6009FB19D /* EmailSignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587DF2262803D6009FB19D /* EmailSignInVC.swift */; };
 		C55EC8392616FE6200F2885E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EC8382616FE6200F2885E /* AppDelegate.swift */; };
 		C55EC83B2616FE6200F2885E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EC83A2616FE6200F2885E /* SceneDelegate.swift */; };
 		C55EC83D2616FE6200F2885E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EC83C2616FE6200F2885E /* ViewController.swift */; };
@@ -83,6 +84,7 @@
 		C5587D2F2624CCA7009FB19D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C5587D442625AFF9009FB19D /* MerchantDashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantDashVC.swift; sourceTree = "<group>"; };
 		C5587D492625B044009FB19D /* SellProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellProductVC.swift; sourceTree = "<group>"; };
+		C5587DF2262803D6009FB19D /* EmailSignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignInVC.swift; sourceTree = "<group>"; };
 		C55EC8352616FE6200F2885E /* ezpay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ezpay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55EC8382616FE6200F2885E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C55EC83A2616FE6200F2885E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				C5587D2F2624CCA7009FB19D /* MainVC.swift */,
 				C5587B3A261F1C5F009FB19D /* SignInVC.swift */,
+				C5587DF2262803D6009FB19D /* EmailSignInVC.swift */,
 				C5587B42261F1D63009FB19D /* DashVC.swift */,
 				C5587D442625AFF9009FB19D /* MerchantDashVC.swift */,
 				C5587B4A261F23ED009FB19D /* AddMoneyVC.swift */,
@@ -551,6 +554,7 @@
 				C5587B4B261F23ED009FB19D /* AddMoneyVC.swift in Sources */,
 				C5587A20261C9A07009FB19D /* NavigationModels.swift in Sources */,
 				C5587C4726206212009FB19D /* UserVC.swift in Sources */,
+				C5587DF3262803D6009FB19D /* EmailSignInVC.swift in Sources */,
 				C5587A36261C9B5A009FB19D /* CustomImgs.swift in Sources */,
 				C55EC8432616FE6200F2885E /* ezpay.xcdatamodeld in Sources */,
 				C5587B50261F2409009FB19D /* CustomTxtFlds.swift in Sources */,
