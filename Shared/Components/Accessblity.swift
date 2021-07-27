@@ -26,6 +26,10 @@ struct COLORS {
     
 }
 
+struct IMAGES {
+    static let Logo = UIImage(named:"Logo")
+}
+
 struct STR_UserDefault {
    static let Role = "role"
     static let Name = "name"

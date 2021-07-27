@@ -17,6 +17,11 @@ class MerchantDashVC: UIViewController {
         return lbl
     }()
     
+    lazy var Applogo:CustomIMG={
+        let img = CustomIMG(image: IMAGES.Logo)
+        return img
+    }()
+    
     lazy var Namelbl:UILabel={
         let lbl = UILabel()
         lbl.setCustomLBL(str: "", color: COLORS.BorderColor, align: .center, size: 18)

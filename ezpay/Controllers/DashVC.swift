@@ -17,6 +17,11 @@ class DashVC: UIViewController {
         return lbl
     }()
     
+    lazy var Applogo:CustomIMG={
+        let img = CustomIMG(image: IMAGES.Logo)
+        return img
+    }()
+    
     lazy var Namelbl:UILabel={
         let lbl = UILabel()
         lbl.setCustomLBL(str: "", color: COLORS.BorderColor, align: .center, size: 18)
@@ -74,6 +79,7 @@ class DashVC: UIViewController {
     
     func SetSubViews(){
         view.addSubview(Welcomelbl)
+        view.addSubview(Applogo)
         view.addSubview(Mybalancelbl)
         view.addSubview(SendMoney)
         view.addSubview(AddMoney)
@@ -225,6 +231,9 @@ class DashVC: UIViewController {
 extension DashVC{
     func setuplayout(){
         Welcomelbl.anchorWith_TopLeftBottomRight_Padd(top: view.safeAreaLayoutGuide.topAnchor, left: view.leadingAnchor, bottom: nil, right: view.trailingAnchor, padd: .init(top: 30, left: 0, bottom: 0, right: 0))
+        
+        Applogo.anchorWith_TopLeftBottomRight_Padd(top: view.safeAreaLayoutGuide.topAnchor, left: view.leadingAnchor, bottom: nil, right: nil, padd: .init(top: 15, left: 20, bottom: 0, right: 0))
+        Applogo.anchorWith_WidthHeight(width: view.widthAnchor, height: nil, constWidth: 0.3, constHeight: 100)
         
         Mybalancelbl.anchorWith_XY_TopLeftBottomRight_Padd(x: nil, y: view.centerYAnchor, top: nil, left: view.leadingAnchor, bottom: nil, right: view.trailingAnchor, padd: .init(top: -100, left: 0, bottom: 0, right: 0))
         
