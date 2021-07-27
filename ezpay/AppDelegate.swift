@@ -3,22 +3,23 @@
 //  ezpay
 //
 //  Created by Albert Charles on 02/04/21.
-//
+//"com_ezpay_nissi_Clip"
 
 import UIKit
 import CoreData
 import Firebase
 import GoogleSignIn
+import Stripe
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        
-        GIDSignIn.sharedInstance()?.clientID = "57005291591-n83ct2o35auqb0rildnbs55icb4m0pkg.apps.googleusercontent.com"
+        var db = Firestore.firestore()
         
         if #available(iOS 13.0, *){
             print("iOS 13")
@@ -37,6 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 window.makeKeyAndVisible()
             }
         }
+        STPPaymentConfiguration.shared.publishableKey = "pk_test_51IgtnoLRPkh4LOyDkQ7muN6jaUaM6kEOuVpYC2EnKjfJJePylwIFT1ONqSK7jB5Ttv2heTGSq5J96dzu0u4tSxmj00THY1DwUO"
+        STPPaymentConfiguration.shared.appleMerchantIdentifier = "merchant.com.ezpay.nissi"
+        STPPaymentConfiguration.shared.companyName = "eZpay"
+        
         return true
     }
 

@@ -123,7 +123,7 @@ extension SendMoneyVC:NFCTagReaderSessionDelegate{
                     DispatchQueue.main.async {
                         let nfcIDstr = identifier.hexEncodedString().uppercased()
                         if UserModel.CustomerData != nil{
-                            
+                            print(UserModel.CustomerData)
                             for data in UserModel.CustomerData{
                                 if data.TagId == nfcIDstr{
                                     isvalid = true
@@ -132,8 +132,8 @@ extension SendMoneyVC:NFCTagReaderSessionDelegate{
                                     UserModel.ref.child("User").child(data.TagId).setValue(adddata)
                                     let balance = UserModel.UserData!.balance - self.Customeraddamnt
                                     UserModel.UserData!.balance = UserModel.UserData!.balance - self.Customeraddamnt
-                                    let data = ["mail":UserModel.UserData!.mail,"balance":balance] as! [String:Any]
-                                    UserModel.ref.child("Donar").child(UserModel.UserData!.DonarId).setValue(data)
+                                    let data = ["balance":balance,"Role":UserModel.UserData!.Role] as! [String:Any]
+                                    UserModel.ref.child(UserModel.UserData!.UserId).setValue(data)
                                     session.alertMessage = "Money Send Successfully"
                                     session.invalidate()
                                     let vc = DashVC()

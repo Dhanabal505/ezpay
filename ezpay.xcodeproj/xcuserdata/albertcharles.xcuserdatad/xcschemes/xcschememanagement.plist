@@ -4,10 +4,53 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>com.ezpay.nissi.Clip.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>33</integer>
+		</dict>
+		<key>ezpay Appclip.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
 		<key>ezpay.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>52</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>C55EC8342616FE6200F2885E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C55EC84D2616FE6300F2885E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C55EC8582616FE6300F2885E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C56D514B26A6E99C0096E910</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C56D516426A6E99F0096E910</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C56D516F26A6E99F0096E910</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

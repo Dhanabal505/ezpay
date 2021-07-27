@@ -6,10 +6,22 @@
 	<array>
 		<string>Default</string>
 	</array>
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>applinks:ezpay.payment.user</string>
+	</array>
+	<key>com.apple.developer.in-app-payments</key>
+	<array>
+		<string>merchant.com.ezpay.nissi</string>
+	</array>
 	<key>com.apple.developer.nfc.readersession.formats</key>
 	<array>
 		<string>NDEF</string>
 		<string>TAG</string>
+	</array>
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.ezpay.payment</string>
 	</array>
 </dict>
 </plist>

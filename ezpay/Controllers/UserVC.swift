@@ -37,6 +37,7 @@ class UserVC: UIViewController {
         super.viewDidLoad()
 
         SetSubViews()
+        getFirebasecustomerdata(TagID: "")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -57,14 +58,19 @@ class UserVC: UIViewController {
     @objc func handleAddUser(){
         let strusername = NameTxt.txtField.text
         
-        if strusername?.count != 0 {
-            self.Name = strusername!
+        
+        guard strusername?.count != 0 else{
+            self.makeToast(strMessage: "Kindly Provide the Username")
+            return
         }
+        
+        self.Name = strusername!
         
         let strAmount = AmountTxt.txtField.text
         if strAmount?.count != 0 {
             self.Amount = Double(strAmount!)!
         }
+        
         if UserModel.UserData?.balance != nil{
             if UserModel.UserData!.balance < Double(strAmount!)! {
                 self.makeToast(strMessage: "Insufficient fund")
@@ -101,25 +107,25 @@ class UserVC: UIViewController {
                 self.CustomerData.append(data!)
                 print(self.CustomerData)
              }
-            for data in self.CustomerData{
+            
                 do {
-                    let jsonData = try? JSONSerialization.data(withJSONObject:data)
+                    let jsonData = try? JSONSerialization.data(withJSONObject:self.CustomerData)
                     let user = try JSONDecoder().decode([Customer].self, from: jsonData!)
                     UserModel.CustomerData = user
                 }
                 catch let error{
                     print("Error - \(error)")
                 }
-            }
+            
         })
-        let loader = LoaderView()
-        loader.showLoader()
-        DispatchQueue.main.asyncAfter(deadline: .now()+2){
-            loader.hideLoader()
-            self.makeToast(strMessage: "Money Added Successfully")
-            let vc = DashVC()
-            NavigationModel.redirectVC(to: vc)
-        }
+//        let loader = LoaderView()
+//        loader.showLoader()
+//        DispatchQueue.main.asyncAfter(deadline: .now()+2){
+//            loader.hideLoader()
+//            self.makeToast(strMessage: "Money Added Successfully")
+//            let vc = DashVC()
+//            NavigationModel.redirectVC(to: vc)
+//        }
         
     }
 
@@ -176,7 +182,7 @@ extension UserVC:NFCTagReaderSessionDelegate{
                         for data in UserModel.CustomerData{
                             if data.TagId == nfcIDstr{
                                 NewUser = false
-                                session.invalidate(errorMessage: "This User Already Added")
+                                session.invalidate(errorMessage: "This Band Already Associated with i8another User")
                             }
                         }
                     }
@@ -185,8 +191,8 @@ extension UserVC:NFCTagReaderSessionDelegate{
                     UserModel.ref.child("User").child(nfcIDstr).setValue(data)
                         let balance = UserModel.UserData!.balance - self.Amount
                         UserModel.UserData!.balance = UserModel.UserData!.balance - self.Amount
-                        let datas = ["mail":UserModel.UserData!.mail,"balance":balance] as! [String:Any]
-                        UserModel.ref.child("Donar").child(UserModel.UserData!.DonarId).setValue(datas)
+                        let datas = ["balance":balance] as! [String:Any]
+                        UserModel.ref.child("Donar").child(UserModel.UserData!.UserId).setValue(datas)
                         session.alertMessage = "User Added Successfully"
                         session.invalidate()
                         DispatchQueue.main.async {

@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class DashVC: UIViewController {
     
@@ -18,6 +20,7 @@ class DashVC: UIViewController {
     lazy var Namelbl:UILabel={
         let lbl = UILabel()
         lbl.setCustomLBL(str: "", color: COLORS.BorderColor, align: .center, size: 18)
+        lbl.isHidden = true
         return lbl
     }()
     
@@ -51,32 +54,26 @@ class DashVC: UIViewController {
         return btn
     }()
 
+    var isSignin = false
     var CustomerData = [[String:Any]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         SetSubViews()
-        initialload()
-        
-        let Role = "\(LOCALSTORAGE.getLocalData(key: STR_UserDefault.Role)!)"
-        if Role == "1"{
-            AddUser.isHidden = false
-        }else{
-            AddUser.isHidden = true
-        }
+        getFirebasecustomerdata(TagID: "")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         setNavigation()
         navigationController?.navigationBar.isHidden = true
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
-        GetFirebaseusers()
+        initialload()
+        
     }
     
     func SetSubViews(){
         view.addSubview(Welcomelbl)
-        view.addSubview(Namelbl)
         view.addSubview(Mybalancelbl)
         view.addSubview(SendMoney)
         view.addSubview(AddMoney)
@@ -87,13 +84,61 @@ class DashVC: UIViewController {
     }
     
     func initialload(){
-        let name = "\(LOCALSTORAGE.getLocalData(key: STR_UserDefault.Name)!)"
-        Namelbl.text = name
-        if UserModel.UserData?.balance != nil{
-            Mybalancelbl.text = "Wallet Money: $\(UserModel.UserData!.balance)"
+        let view = LoaderView()
+        view.showLoader()
+        if isSignin == false{
+        UserModel.ref = Database.database().reference()
+        let userid = Auth.auth().currentUser!.uid
+            print(userid)
+        UserModel.ref.observe(.childAdded, with: { (snapshot) in
+            if userid == snapshot.key{
+                if let userDict = snapshot.value as? [String:Any] {
+                   var UserID = ""
+                   var Balance = 0.00
+                   var Role = ""
+                   for data in userDict{
+                       if let userid =  snapshot.key as? String{
+                           UserID = userid
+                       }
+                       if data.key == "Role"{
+                           Role = data.value as! String
+                       }
+                       if data.key == "balance"{
+                           Balance = (data.value as? Double)!
+                       }
+                   }
+                   let data = ["Role":Role,"balance":Balance,"UserId":UserID] as? [String:Any]
+                    do {
+                        let jsonData = try? JSONSerialization.data(withJSONObject:data)
+                        let user = try JSONDecoder().decode(Donar.self, from: jsonData!)
+                        UserModel.UserData = user
+                    }
+                    catch let error{
+                        print("Error - \(error)")
+                    }
+                    if UserModel.UserData!.Role == "Admin"{
+                        self.AddUser.isHidden = false
+                    }else{
+                        self.AddUser.isHidden = true
+                    }
+                    self.Mybalancelbl.text = "My Wallet : $\(UserModel.UserData!.balance)"
+                    
+                    view.hideLoader()
+                }
+            }
+        })
         }else{
-            Mybalancelbl.text = "Wallet Money: $0"
+            if UserModel.UserData!.Role == "Admin"{
+                self.AddUser.isHidden = false
+            }else{
+                self.AddUser.isHidden = true
+            }
+            self.Mybalancelbl.text = "My Wallet : $\(UserModel.UserData!.balance)"
+            view.hideLoader()
         }
+        
+        
+                                
     }
     
     @objc func handleAddMoney(){
@@ -112,42 +157,67 @@ class DashVC: UIViewController {
     }
     
     @objc func handlelogout(){
-        let vc = MainVC()
-        NavigationModel.redirectVC(to: vc)
+            let alert = UIAlertController(title: "Signout!", message: "Are you really want to Signout?", preferredStyle: .alert)
+            let yes = UIAlertAction(title: "Yes", style: .default) { (actions) in
+                let firebaseAuth = Auth.auth()
+                        do {
+                          try firebaseAuth.signOut()
+                            let vc = MainVC()
+                            NavigationModel.redirectVC(to: vc)
+                        } catch let signOutError as NSError {
+                          print ("Error signing out: %@", signOutError)
+                        }
+            }
+            let no = UIAlertAction(title: "No", style: .cancel, handler: nil)
+            alert.addAction(yes)
+            alert.addAction(no)
+            self.present(alert, animated: true, completion: nil)
     }
     
-    func GetFirebaseusers(){
+    func getFirebasecustomerdata(TagID:String){
+        
         UserModel.ref.child("User").observe(.childAdded, with: { (snapshot) in
-                
-                 if let userDict = snapshot.value as? [String:Any] {
-                    var TagId = ""
-                    var Name = ""
-                    var Balance = 0.00
-                    if let customerid =  snapshot.key as? String{
-                        TagId = customerid
-                    }
-                    for data in userDict{
-                            if data.key == "name"{
-                                Name = (data.value as? String)!
-                            }
-                            if data.key == "balance" {
-                                Balance = (data.value as? Double)!
-                            }
-                        
-                    }
-                    let data = ["name":Name,"balance":Balance,"TagId":TagId] as? [String:Any]
-                    self.CustomerData.append(data!)
-                    print(self.CustomerData)
-                 }
-            do {
-                let jsonData = try? JSONSerialization.data(withJSONObject:self.CustomerData)
-                let user = try JSONDecoder().decode([Customer].self, from: jsonData!)
-                UserModel.CustomerData = user
-            }
-            catch let error{
-                print("Error - \(error)")
-            }
+            
+             if let userDict = snapshot.value as? [String:Any] {
+                var TagId = ""
+                var Name = ""
+                var Balance = 0
+                if let customerid =  snapshot.key as? String{
+                    TagId = customerid
+                }
+                for data in userDict{
+                        if data.key == "name"{
+                            Name = (data.value as? String)!
+                        }
+                        if data.key == "balance" {
+                            Balance = (data.value as? Int)!
+                        }
+                    
+                }
+                let data = ["name":Name,"balance":Balance,"TagId":TagId] as? [String:Any]
+                self.CustomerData.append(data!)
+                print(self.CustomerData)
+             }
+            
+                do {
+                    let jsonData = try? JSONSerialization.data(withJSONObject:self.CustomerData)
+                    let user = try JSONDecoder().decode([Customer].self, from: jsonData!)
+                    UserModel.CustomerData = user
+                }
+                catch let error{
+                    print("Error - \(error)")
+                }
+            
         })
+//        let loader = LoaderView()
+//        loader.showLoader()
+//        DispatchQueue.main.asyncAfter(deadline: .now()+2){
+//            loader.hideLoader()
+//            self.makeToast(strMessage: "Money Added Successfully")
+//            let vc = DashVC()
+//            NavigationModel.redirectVC(to: vc)
+//        }
+        
     }
 
 }
@@ -156,9 +226,7 @@ extension DashVC{
     func setuplayout(){
         Welcomelbl.anchorWith_TopLeftBottomRight_Padd(top: view.safeAreaLayoutGuide.topAnchor, left: view.leadingAnchor, bottom: nil, right: view.trailingAnchor, padd: .init(top: 30, left: 0, bottom: 0, right: 0))
         
-        Namelbl.anchorWith_TopLeftBottomRight_Padd(top: Welcomelbl.bottomAnchor, left: view.leadingAnchor, bottom: nil, right: view.trailingAnchor, padd: .init(top: 30, left: 0, bottom: 0, right: 0))
-        
-        Mybalancelbl.anchorWith_XY_TopLeftBottomRight_Padd(x: nil, y: view.centerYAnchor, top: nil, left: view.leadingAnchor, bottom: nil, right: nil, padd: .init(top: -60, left: 30, bottom: 0, right: 0))
+        Mybalancelbl.anchorWith_XY_TopLeftBottomRight_Padd(x: nil, y: view.centerYAnchor, top: nil, left: view.leadingAnchor, bottom: nil, right: view.trailingAnchor, padd: .init(top: -100, left: 0, bottom: 0, right: 0))
         
         AddMoney.anchorWith_XY_TopLeftBottomRight_Padd(x: view.centerXAnchor, y: view.centerYAnchor, top: nil, left: view.leadingAnchor, bottom: nil, right: view.trailingAnchor, padd: .init(top: 0, left: 20, bottom: 0, right: -20))
         

@@ -2,6 +2,9 @@
 # platform :ios, '9.0'
 
 target 'ezpay' do
+
+
+ 
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
@@ -13,6 +16,11 @@ target 'ezpay' do
 	pod 'GoogleSignIn'
 	pod 'Firebase/Core'
 	pod 'Firebase/Auth'
+	pod 'Stripe', '21.4.0'
+	pod 'Firebase/Firestore'
+	pod 'FirebaseFirestoreSwift'
+	
+
 
   target 'ezpayTests' do
     inherit! :search_paths
@@ -22,5 +30,7 @@ target 'ezpay' do
   target 'ezpayUITests' do
     # Pods for testing
   end
-
+  
+  
 end
+

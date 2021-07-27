@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>57005291591-n83ct2o35auqb0rildnbs55icb4m0pkg.apps.googleusercontent.com</string>
+	<string>918477835160-vbhek6ll841glo9cre7u898q0af2kigp.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.57005291591-n83ct2o35auqb0rildnbs55icb4m0pkg</string>
+	<string>com.googleusercontent.apps.918477835160-vbhek6ll841glo9cre7u898q0af2kigp</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAKTqoeUj4eTTAt84Xi8F_2qMyntfz52EE</string>
+	<string>AIzaSyBQs_Pmo9vScc1g3V7LzrOtSSxzOobF8sc</string>
 	<key>GCM_SENDER_ID</key>
-	<string>57005291591</string>
+	<string>918477835160</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.ezpay.nissi</string>
 	<key>PROJECT_ID</key>
-	<string>ezpaynissi</string>
+	<string>ezpay-15918</string>
 	<key>STORAGE_BUCKET</key>
-	<string>ezpaynissi.appspot.com</string>
+	<string>ezpay-15918.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:57005291591:ios:0454a57330804e43ee1962</string>
+	<string>1:918477835160:ios:9dfbc242c85b36968b39ed</string>
+	<key>DATABASE_URL</key>
+	<string>https://ezpay-15918-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

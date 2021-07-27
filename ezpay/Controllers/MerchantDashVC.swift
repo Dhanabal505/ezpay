@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreNFC
+import FirebaseAuth
 
 class MerchantDashVC: UIViewController {
     
@@ -19,6 +20,7 @@ class MerchantDashVC: UIViewController {
     lazy var Namelbl:UILabel={
         let lbl = UILabel()
         lbl.setCustomLBL(str: "", color: COLORS.BorderColor, align: .center, size: 18)
+        lbl.isHidden = true
         return lbl
     }()
     
@@ -48,8 +50,6 @@ class MerchantDashVC: UIViewController {
         super.viewDidLoad()
 
         SetSubViews()
-        let name = "\(LOCALSTORAGE.getLocalData(key: STR_UserDefault.Name)!)"
-        Namelbl.text = name
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -82,8 +82,22 @@ class MerchantDashVC: UIViewController {
     }
     
     @objc func handlelogout(){
-        let vc = MainVC()
-        NavigationModel.redirectVC(to: vc)
+            let alert = UIAlertController(title: "Signout!", message: "Are you really want to Signout?", preferredStyle: .alert)
+            let yes = UIAlertAction(title: "Yes", style: .default) { (actions) in
+                let firebaseAuth = Auth.auth()
+                        do {
+                          try firebaseAuth.signOut()
+                            let vc = MainVC()
+                            NavigationModel.redirectVC(to: vc)
+                        } catch let signOutError as NSError {
+                          print ("Error signing out: %@", signOutError)
+                        }
+            }
+            let no = UIAlertAction(title: "No", style: .cancel, handler: nil)
+            alert.addAction(yes)
+            alert.addAction(no)
+        self.present(alert, animated: true, completion: nil)
+      
     }
     
     func GetfirebaseusersData(){
